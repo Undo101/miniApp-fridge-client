@@ -1,0 +1,7 @@
+<view class="container">
+    <view class="icon-author"></view>
+    <input class="write-name" type="text" placeholder="书名 & 作者"/>
+    <view class="icon-write"></view>
+    <textarea name="觉得好" class="write-txt" id="" cols="30" rows="10"></textarea>
+    <button class="write-btn" bindtap="commitWrite">sure +</button>
+</view>

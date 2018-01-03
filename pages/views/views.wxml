@@ -1,0 +1,2 @@
+<!--pages/views/views.wxml-->
+<text>{{page}}.wxml</text>

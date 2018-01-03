@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/views/views",
+    "pages/songs/songs",
+    "pages/addone/book-add"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "海",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#6495ED",
+    "selectedColor": "#B0C4DE",
+    "borderStyle": "#fff",
+    "background": "#B0C4DE",
+    "list": [
+       {
+        "pagePath": "pages/index/index",
+        "text": "书",
+        "selectedIconPath": "/images/booky.png",
+        "iconPath": "images/book.png"
+      },
+      {
+        "pagePath": "pages/songs/songs",
+        "text": "颂",
+        "selectedIconPath": "images/songs.png",
+        "iconPath": "images/songsy.png"
+      },
+      {
+        "pagePath": "pages/views/views",
+        "text": "画",
+        "selectedIconPath": "images/views.png",
+        "iconPath": "images/viewsy.png"
+      }
+    ]
+  }
+}

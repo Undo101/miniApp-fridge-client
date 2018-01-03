@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="swiper">
+    <swiper class="swiper_box" vertical="{{swiper.vertical}}" autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}"
+      duration="{{swiper.duration}}" indicator-dots="{{swiper.indicatorDots}}" circular="{{swiper.circular}}">
+      <block wx:for="{{swiper.images}}" wx:key="pic">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="book">
+    <view class="book-name">书名 & 作者</view>
+    <view class="book-txt">美文摘录</view>
+  </view> 
+  <view class="book-list" wx:for="{{bookList}}" wx:key="*this" hidden="{{orderHidden}}">
+    <view class="book-item__name">{{item.name}} & {{item.author}}</view>
+    <text class="book-item__words">{{item.txt}} </text>
+  </view>
+  <view class="book-add">
+    <button bindtap="addone" >one more</button>
+  </view>
+</view>
+   
